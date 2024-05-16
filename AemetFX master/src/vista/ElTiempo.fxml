@@ -15,7 +15,7 @@
             <Image url="@../imagenes/aemet.png" />
          </image>
       </ImageView>
-      <TextField fx:id="txt_ciudad" layoutX="112.0" layoutY="252.0" onKeyReleased="#actualizarTiempo" prefHeight="25.0" prefWidth="292.0" />
+      <TextField fx:id="txt_ciudad" layoutX="112.0" layoutY="251.0" prefHeight="25.0" prefWidth="292.0" />
       <Label layoutX="28.0" layoutY="258.0" text="Municipio" />
       <ComboBox fx:id="box_co" layoutX="540.0" layoutY="309.0" prefHeight="30.0" prefWidth="292.0" />
       <ComboBox fx:id="box_pro" layoutX="112.0" layoutY="308.0" prefHeight="30.0" prefWidth="292.0" />
@@ -23,287 +23,314 @@
       <Label layoutX="434.0" layoutY="314.0" prefHeight="20.0" prefWidth="99.0" text="Comunidad" />
       <Label layoutX="24.0" layoutY="313.0" prefHeight="20.0" prefWidth="86.0" text="Provincia" />
       <Label layoutX="452.0" layoutY="256.0" prefHeight="20.0" prefWidth="86.0" text="Municipio" />
-      <Button fx:id="boton_salir" layoutX="1282.0" layoutY="14.0" mnemonicParsing="false" onAction="#clickSalir" prefHeight="72.0" prefWidth="128.0" text="Salir" />
+      <Button fx:id="boton_salir" layoutX="1341.0" layoutY="14.0" mnemonicParsing="false" onAction="#clickSalir" prefHeight="72.0" prefWidth="128.0" text="Salir" />
       <Label layoutX="865.0" layoutY="258.0" prefHeight="20.0" prefWidth="146.0" text="Seleccione idoma" />
       <ComboBox fx:id="box_idiomas" layoutX="1017.0" layoutY="251.0" onShowing="#listarRoles" prefHeight="30.0" prefWidth="292.0" />
-      <Label layoutX="698.0" layoutY="86.0" prefHeight="60.0" prefWidth="245.0" text="%lb.label1" />
-      <Label layoutX="698.0" layoutY="160.0" prefHeight="60.0" prefWidth="245.0" text="%lb.label2" />
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
-      <AnchorPane layoutY="438.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="149.0" style="-fx-background-color: lightblue;">
+      <AnchorPane layoutX="47.0" layoutY="382.0" prefHeight="200.0" prefWidth="200.0">
          <children>
-            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <AnchorPane layoutX="-45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="222.0" style="-fx-background-color: lightblue;">
+               <children>
+                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="28.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenesAviso/calor.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="28.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenesAviso/frio.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="30.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenesAviso/uv.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="34.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenesAviso/porcentajelluvia.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="53.0" fitWidth="61.0" layoutX="27.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenesAviso/viento.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="23.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="91.0" layoutY="54.0" text="Label" />
+                  <Label layoutX="91.0" layoutY="115.0" text="Label" />
+                  <Label layoutX="91.0" layoutY="182.0" text="Label" />
+                  <Label layoutX="91.0" layoutY="269.0" text="Label" />
+                  <Label layoutX="155.0" layoutY="331.0" text="Label" />
+                  <Label layoutX="88.0" layoutY="441.0" text="Label" />
+                  <Label layoutX="7.0" layoutY="321.0" />
+                  <Label layoutX="91.0" layoutY="70.0" prefHeight="20.0" prefWidth="53.0" text="Label" />
+                  <Label layoutX="91.0" layoutY="131.0" text="Label" />
+                  <Label fx:id="dia_lunes" layoutX="70.0" layoutY="14.0" prefHeight="20.0" prefWidth="69.0" text="Label" />
+                  <Label layoutX="91.0" layoutY="198.0" text="Label" />
+                  <Label layoutX="88.0" layoutY="383.0" text="Label" />
+                  <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="27.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="1.0" layoutY="326.0" prefHeight="30.0" prefWidth="159.0" text="%lb.label1" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="209.0" layoutY="382.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="245.0" style="-fx-background-color: lightblue;">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="28.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imagenesAviso/calor.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="29.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="28.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imagenesAviso/frio.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="31.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="30.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imagenesAviso/uv.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="35.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="34.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imagenesAviso/porcentajelluvia.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="53.0" fitWidth="61.0" layoutX="35.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="53.0" fitWidth="61.0" layoutX="27.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imagenesAviso/viento.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="27.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
-            <Label layoutX="96.0" layoutY="37.0" text="Label" />
-            <Label layoutX="96.0" layoutY="98.0" text="Label" />
-            <Label layoutX="96.0" layoutY="165.0" text="Label" />
-            <Label layoutX="96.0" layoutY="243.0" text="Label" />
-            <Label layoutX="96.0" layoutY="312.0" text="Label" />
-            <Label layoutX="96.0" layoutY="375.0" text="Label" />
+            <Label layoutX="91.0" layoutY="54.0" text="Label" />
+            <Label layoutX="91.0" layoutY="115.0" text="Label" />
+            <Label layoutX="91.0" layoutY="182.0" text="Label" />
+            <Label layoutX="91.0" layoutY="269.0" text="Label" />
+            <Label layoutX="88.0" layoutY="441.0" text="Label" />
+            <Label layoutX="91.0" layoutY="70.0" prefHeight="20.0" prefWidth="53.0" text="Label" />
+            <Label layoutX="91.0" layoutY="131.0" text="Label" />
+            <Label fx:id="dia_martes" layoutX="70.0" layoutY="14.0" prefHeight="20.0" prefWidth="69.0" text="Label" />
+            <Label layoutX="91.0" layoutY="198.0" text="Label" />
+            <Label layoutX="88.0" layoutY="383.0" text="Label" />
+            <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="27.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="1.0" layoutY="326.0" prefHeight="30.0" prefWidth="159.0" text="%lb.label1" />
+            <Label layoutX="157.0" layoutY="331.0" text="Label" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="204.0" layoutY="433.0" prefHeight="200.0" prefWidth="200.0">
+      <AnchorPane layoutX="414.0" layoutY="382.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="245.0" style="-fx-background-color: lightblue;">
          <children>
-            <AnchorPane layoutX="-10.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="149.0" style="-fx-background-color: lightblue;">
-               <children>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/calor.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="29.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/frio.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="31.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/uv.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="35.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/porcentajelluvia.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="53.0" fitWidth="61.0" layoutX="35.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/viento.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="27.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label layoutX="96.0" layoutY="37.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="98.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="165.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="243.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="312.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="375.0" text="Label" />
-               </children>
-            </AnchorPane>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="28.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/calor.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="28.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/frio.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="30.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/uv.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="34.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/porcentajelluvia.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="61.0" layoutX="27.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/viento.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="91.0" layoutY="54.0" text="Label" />
+            <Label layoutX="91.0" layoutY="115.0" text="Label" />
+            <Label layoutX="91.0" layoutY="182.0" text="Label" />
+            <Label layoutX="91.0" layoutY="269.0" text="Label" />
+            <Label layoutX="88.0" layoutY="441.0" text="Label" />
+            <Label layoutX="91.0" layoutY="70.0" prefHeight="20.0" prefWidth="53.0" text="Label" />
+            <Label layoutX="91.0" layoutY="131.0" text="Label" />
+            <Label fx:id="dia_Miercoles" layoutX="70.0" layoutY="14.0" prefHeight="20.0" prefWidth="69.0" text="Label" />
+            <Label layoutX="91.0" layoutY="198.0" text="Label" />
+            <Label layoutX="88.0" layoutY="383.0" text="Label" />
+            <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="27.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="1.0" layoutY="326.0" prefHeight="30.0" prefWidth="159.0" text="%lb.label1" />
+            <Label layoutX="160.0" layoutY="331.0" text="Label" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="404.0" layoutY="433.0" prefHeight="200.0" prefWidth="200.0">
+      <AnchorPane layoutX="626.0" layoutY="382.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="245.0" style="-fx-background-color: lightblue;">
          <children>
-            <AnchorPane layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="149.0" style="-fx-background-color: lightblue;">
-               <children>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/calor.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="29.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/frio.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="31.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/uv.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="35.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/porcentajelluvia.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="53.0" fitWidth="61.0" layoutX="35.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/viento.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="27.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label layoutX="96.0" layoutY="37.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="98.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="165.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="243.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="312.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="375.0" text="Label" />
-               </children>
-            </AnchorPane>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="28.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/calor.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="28.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/frio.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="30.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/uv.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="34.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/porcentajelluvia.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="61.0" layoutX="27.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/viento.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="27.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="91.0" layoutY="54.0" text="Label" />
+            <Label layoutX="91.0" layoutY="115.0" text="Label" />
+            <Label layoutX="91.0" layoutY="182.0" text="Label" />
+            <Label layoutX="91.0" layoutY="269.0" text="Label" />
+            <Label layoutX="88.0" layoutY="441.0" text="Label" />
+            <Label layoutX="91.0" layoutY="70.0" prefHeight="20.0" prefWidth="53.0" text="Label" />
+            <Label layoutX="91.0" layoutY="131.0" text="Label" />
+            <Label fx:id="dia_Jueves" layoutX="70.0" layoutY="14.0" prefHeight="20.0" prefWidth="69.0" text="Label" />
+            <Label layoutX="91.0" layoutY="198.0" text="Label" />
+            <Label layoutX="88.0" layoutY="383.0" text="Label" />
+            <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="27.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="1.0" layoutY="322.0" prefHeight="30.0" prefWidth="159.0" text="%lb.label1" />
+            <Label layoutX="160.0" layoutY="327.0" text="Label" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="618.0" layoutY="433.0" prefHeight="200.0" prefWidth="200.0">
+      <AnchorPane layoutX="832.0" layoutY="382.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="245.0" style="-fx-background-color: lightblue;">
          <children>
-            <AnchorPane layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="149.0" style="-fx-background-color: lightblue;">
-               <children>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/calor.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="29.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/frio.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="31.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/uv.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="35.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/porcentajelluvia.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="53.0" fitWidth="61.0" layoutX="35.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/viento.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="27.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label layoutX="96.0" layoutY="37.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="98.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="165.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="243.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="312.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="375.0" text="Label" />
-               </children>
-            </AnchorPane>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="28.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/calor.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="28.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/frio.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="30.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/uv.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="34.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/porcentajelluvia.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="61.0" layoutX="27.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/viento.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="27.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="91.0" layoutY="54.0" text="Label" />
+            <Label layoutX="91.0" layoutY="115.0" text="Label" />
+            <Label layoutX="91.0" layoutY="182.0" text="Label" />
+            <Label layoutX="91.0" layoutY="269.0" text="Label" />
+            <Label layoutX="88.0" layoutY="441.0" text="Label" />
+            <Label layoutX="91.0" layoutY="70.0" prefHeight="20.0" prefWidth="53.0" text="Label" />
+            <Label layoutX="91.0" layoutY="131.0" text="Label" />
+            <Label fx:id="dia_Viernes" layoutX="70.0" layoutY="14.0" prefHeight="20.0" prefWidth="69.0" text="Label" />
+            <Label layoutX="91.0" layoutY="198.0" text="Label" />
+            <Label layoutX="88.0" layoutY="383.0" text="Label" />
+            <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="27.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="1.0" layoutY="321.0" prefHeight="30.0" prefWidth="159.0" text="%lb.label1" />
+            <Label layoutX="159.0" layoutY="326.0" text="Label" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="843.0" layoutY="433.0" prefHeight="200.0" prefWidth="200.0">
+      <AnchorPane layoutX="1041.0" layoutY="382.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="245.0" style="-fx-background-color: lightblue;">
          <children>
-            <AnchorPane layoutX="-15.0" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="149.0" style="-fx-background-color: lightblue;">
-               <children>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/calor.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="29.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/frio.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="31.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/uv.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="35.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/porcentajelluvia.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="53.0" fitWidth="61.0" layoutX="35.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/viento.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="27.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label layoutX="96.0" layoutY="37.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="98.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="165.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="243.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="312.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="375.0" text="Label" />
-               </children>
-            </AnchorPane>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="28.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/calor.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="28.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/frio.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="30.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/uv.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="34.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/porcentajelluvia.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="61.0" layoutX="27.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/viento.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="27.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="91.0" layoutY="54.0" text="Label" />
+            <Label layoutX="91.0" layoutY="115.0" text="Label" />
+            <Label layoutX="91.0" layoutY="182.0" text="Label" />
+            <Label layoutX="91.0" layoutY="269.0" text="Label" />
+            <Label layoutX="88.0" layoutY="441.0" text="Label" />
+            <Label layoutX="91.0" layoutY="70.0" prefHeight="20.0" prefWidth="53.0" text="Label" />
+            <Label layoutX="91.0" layoutY="131.0" text="Label" />
+            <Label fx:id="dia_Sabado" layoutX="70.0" layoutY="14.0" prefHeight="20.0" prefWidth="69.0" text="Label" />
+            <Label layoutX="91.0" layoutY="198.0" text="Label" />
+            <Label layoutX="88.0" layoutY="383.0" text="Label" />
+            <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="27.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="1.0" layoutY="321.0" prefHeight="30.0" prefWidth="159.0" text="%lb.label1" />
+            <Label layoutX="160.0" layoutY="326.0" text="Label" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="1043.0" layoutY="433.0" prefHeight="200.0" prefWidth="200.0">
+      <AnchorPane layoutX="1245.0" layoutY="382.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="245.0" style="-fx-background-color: lightblue;">
          <children>
-            <AnchorPane layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="149.0" style="-fx-background-color: lightblue;">
-               <children>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/calor.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="29.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/frio.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="31.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/uv.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="35.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/porcentajelluvia.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="53.0" fitWidth="61.0" layoutX="35.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/viento.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="27.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label layoutX="96.0" layoutY="37.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="98.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="165.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="243.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="312.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="375.0" text="Label" />
-               </children>
-            </AnchorPane>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="28.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/calor.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="28.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/frio.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="30.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/uv.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="34.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/porcentajelluvia.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="61.0" layoutX="27.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenesAviso/viento.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="27.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="91.0" layoutY="54.0" text="Label" />
+            <Label layoutX="91.0" layoutY="115.0" text="Label" />
+            <Label layoutX="91.0" layoutY="182.0" text="Label" />
+            <Label layoutX="91.0" layoutY="269.0" text="Label" />
+            <Label layoutX="187.0" layoutY="321.0" text="Label" />
+            <Label layoutX="88.0" layoutY="441.0" text="Label" />
+            <Label layoutX="91.0" layoutY="70.0" prefHeight="20.0" prefWidth="53.0" text="Label" />
+            <Label layoutX="91.0" layoutY="131.0" text="Label" />
+            <Label fx:id="dia_Domingo" layoutX="70.0" layoutY="14.0" prefHeight="20.0" prefWidth="69.0" text="Label" />
+            <Label layoutX="91.0" layoutY="198.0" text="Label" />
+            <Label layoutX="88.0" layoutY="383.0" text="Label" />
+            <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="27.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="16.0" layoutY="316.0" prefHeight="30.0" prefWidth="159.0" text="%lb.label1" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="1243.0" layoutY="438.0" prefHeight="200.0" prefWidth="200.0">
-         <children>
-            <AnchorPane layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="149.0" style="-fx-background-color: lightblue;">
-               <children>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/calor.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="29.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/frio.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="31.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/uv.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="83.0" layoutX="35.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/porcentajelluvia.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="53.0" fitWidth="61.0" layoutX="35.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenesAviso/viento.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="27.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label layoutX="96.0" layoutY="37.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="98.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="165.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="243.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="312.0" text="Label" />
-                  <Label layoutX="96.0" layoutY="375.0" text="Label" />
-               </children>
-            </AnchorPane>
-         </children>
-      </AnchorPane>
+      <Button layoutX="1060.0" layoutY="326.0" mnemonicParsing="false" onAction="#buscar" text="BUSCAR" />
    </children>
 </AnchorPane>
